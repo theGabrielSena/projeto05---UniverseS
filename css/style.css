@@ -1,0 +1,274 @@
+* {
+    margin: 0; /*define a margem do elemento como zero, removendo assim qualquer espaço em branco ao redor do elemento */
+    padding: 0; /* define o preenchimento interno do elemento como zero, o que significa que não haverá espaço em branco entre o conteúdo do elemento e a borda do elemento*/
+    font-size: 100%; /* define o tamanho da fonte como 100% do tamanho padrão do navegador. Isso garante que a fonte seja exibida no tamanho esperado pelo usuário*/
+    font-family: 'Open Sans', sans-serif; /* define a família da fonte usada no elemento como "Open Sans", e sem serifa "sans-serif" */
+    font-weight: normal; /*define o peso da fonte como normal (400), o que significa que a fonte não é nem negrito nem fino*/
+    border: none; /*  define a borda do elemento como nenhum, removendo assim a borda do elemento*/
+    outline: none; /* define a aparência da borda do elemento quando ele está em foco como nenhuma*/
+}
+
+.principal {
+    width: 100%; /*Define a largura do elemento como 100% da largura do elemento pai*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../img/fundo.jpg); /*Define o plano de fundo do elemento como um gradiente linear com duas cores e uma imagem de fundo*/
+    background-position: center; /*Define a posição do plano de fundo como centralizada*/
+    background-size: cover; /*Define o tamanho do plano de fundo como cobrindo todo o elemento*/
+    height: 109vh; /*Define a altura do elemento como 109% da altura da janela de visualização*/
+}
+
+.navbar {
+    width: 100%; /*Define a largura do elemento como 100 porcento*/
+    height: 75px; /*Define a altura do elemento como 75 pixels*/
+    margin: auto; /*Centraliza o elemento horizontalmente em relação ao elemento pai*/
+}
+
+.icon {
+    width: 200px; /*Define a largura do elemento como 200 pixels*/
+    float: left; /*Define o elemento para flutuar à esquerda de seu elemento pai*/
+    height: 70px; /*Define a altura do elemento como 70 pixels*/
+}
+
+.logo {
+    color: #ffffff; /*Define a cor do texto dentro do elemento como branco*/
+    font-size: 35px; /*Define o tamanho da fonte do texto dentro do elemento como 35 pixels*/
+    font-family: 'Open Sans', sans-serif; /*Define fonte do texto dentro do elemento como "Open Sans" e sem serifa*/
+    padding-left: 20px; /*Define o preenchimento esquerdo do elemento como 20 pixels*/
+    float: left; /*Define o elemento para flutuar à esquerda de seu elemento pai*/
+    padding-top: 10px; /*Define o preenchimento superior do elemento como 10 pixels*/
+}
+
+.logo:hover {
+    color: #335582; /*Define a cor do texto dentro do elemento como azul*/
+}
+
+.menu {
+    width: 33.33%; /*Define a largura do elemento como 33.33 porcento*/
+    float: left; 
+    height: 70px; 
+}
+
+ul {
+    float: left; 
+    display: flex; /*Define a exibição do elemento como um flex container*/
+    justify-content: center; 
+    align-items: center; /*Centraliza os itens dentro do elemento verticalmente*/
+}
+
+ul li {
+    list-style: none; /*Remove os marcadores de lista*/
+    margin-left: 62px; 
+    margin-top: 27px; 
+    font-size: 14px; 
+}
+
+ul li a {
+    text-decoration: none; /*Remove a decoração de sublinhado do link*/
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; /*Define a espessura da fonte do texto do link como negrito*/
+    transition: 0.4s ease-in-out; /*Define a transição do elemento ao passar o cursor do mouse sobre ele como 0,4 segundos com uma curva de transição suave*/
+}
+
+ul li a:hover {
+    color: #335582;
+}
+
+.search {
+    width: 26%; 
+    float: left; 
+    margin-left: 270px;
+}
+
+.srch {
+    font-family: 'Times New Roman'; 
+    width: 200px; 
+    height: 40px; 
+    background: rgba(0, 0, 0, 0); /*Define o plano de fundo como transparente*/
+    border: 1px solid #277e98; /**/
+    margin-top: 13px; 
+    color: #ffffff; 
+    border-right: none; /**/
+    font-size: 16px; 
+    float: left; 
+    padding: 10px; /**/
+    border-bottom-left-radius: 5px; /**/
+    border-top-left-radius: 5px; /**/
+}
+
+.btn {
+    width: 100px; 
+    height: 40px; 
+    background: #277e98; 
+    border: 2px solid #277e98; /**/
+    margin-top: 13px; 
+    color: #ffffff; 
+    font-size: 15px;
+    border-bottom-right-radius: 5px; /**/
+    border-top-right-radius: 5px; /**/
+}
+
+.btn:focus {
+    outline: none; /**/
+}
+
+.srch:focus {
+    outline: none; 
+}
+
+.conteudo {
+    width: 100%; 
+    height: auto; /**/
+    margin: auto; /**/
+    color: #ffffff; 
+    position: relative; /**/
+}
+
+.conteudo .par {
+    padding-left: 20px; /**/
+    padding-bottom: 25px; /**/
+    font-family: 'Open Sans';
+    letter-spacing: 1.2px; /**/
+    line-height: 30px; /**/
+}
+
+.conteudo h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px; 
+    margin-top: 9%; 
+    letter-spacing: 2px; /**/
+}
+
+.conteudo .cn {
+    width: 160px; /**/
+    height: 40px; /**/
+    background: #277e98; /**/
+    border: none; /**/
+    margin-bottom: 10px; /**/
+    margin-left: 20px; /**/
+    font-size: 18px; /**/
+    border-radius: 10px; /**/
+    cursor: pointer; /**/
+    transition: .4s ease; /**/
+
+}
+
+.conteudo .cn a {
+    text-decoration: none; /**/
+    color: #000000; /**/
+    transition: .3s ease; /**/
+}
+
+.cn:hover {
+    background-color: #ffffff; /**/
+}
+
+.conteudo span {
+    color: #277e98; /**/
+    font-size: 60px; /**/
+}
+
+.form {
+    width: 250px; /**/
+    height: 380px; /**/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%); /**/
+    position: absolute; /**/
+    top: -20px; /**/
+    left: 870px; /**/
+    border-radius: 10px; /**/
+    padding: 25px; /**/
+}
+
+.form h2 {
+    width: 220px; /**/
+    font-family: sans-serif; /**/
+    text-align: center; /**/
+    color: #277e98; /**/
+    font-size: 22px; /**/
+    background-color: #ffffff; /**/
+    border-radius: 10px; /**/
+    margin: 2px; /**/
+    padding: 8px; /**/
+}
+
+.form input {
+    width: 240px; /**/
+    height: 35px; /**/
+    background: rgba(0, 0, 0, 0); /**/
+    border-bottom: 1px solid #277e98; /**/
+    border-top: none; /**/
+    border-right: none; /**/
+    border-left: none; /**/
+    color: #ffffff; /**/
+    font-size: 15px; /**/
+    letter-spacing: 1px; /**/
+    margin-top: 30px; /**/
+    font-family: sans-serif; /**/
+}
+
+.form input:focus {
+    outline: none; /**/
+}
+
+::placeholder {
+    color: #ffffff; /**/
+    font-family: 'Open Sans'; /**/
+}
+
+.btnn {
+    width: 240px; /**/
+    height: 40px; /**/
+    background: #277e98; /**/
+    border: none; /**/
+    margin-top: 30px; /**/
+    font-size: 18px; /**/
+    border-radius: 10px; /**/
+    cursor: pointer; /**/
+    color: #ffffff; /**/
+}
+
+.btnn:hover {
+    background: #ffffff; /**/
+    color: #277e98; /**/
+}
+
+.btnn a {
+    text-decoration: none; /**/
+    color: #000000; /**/
+    font-weight: bold; /**/
+}
+
+.form .link {
+    font-family: 'Open Sans', Helvetica, sans-serif; /**/
+    font-size: 17px; /**/
+    padding-top: 20px; /**/
+    text-align: center; /**/
+}
+
+.form .link a {
+    text-decoration: none; /**/
+    color: #277e98; /**/
+}
+
+.liw {
+    padding-top: 15px; /**/
+    padding-bottom: 10px; /**/
+    text-align: center; /**/
+}
+
+.icons a {
+    text-decoration: none; /**/
+    color: #ffffff; /**/
+}
+
+.icons ion-icon {
+    color: #ffffff; /**/
+    font-size: 30px; /**/
+    padding-left: 14px; /**/
+    padding-top: 5px; /**/
+    transition: 0.3s ease; /**/
+}
+
+.icons ion-icon:hover {
+    color: #277e98; /**/
+}
